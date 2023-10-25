@@ -7,3 +7,8 @@
     - name: run show version on remote devices
       cisco.nxos.nxos_command:
         commands: show version
+      register: verison
+
+    - debug: msg="{{ version.stdout }}" 
+    
+    - debug: msg="{{ version.stderr }}"
