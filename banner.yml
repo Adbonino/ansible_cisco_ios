@@ -1,6 +1,7 @@
 ---
 - name: Cisco banner
   hosts: all
+  remote_user: admin
 
   tasks:
     - name: run show version on remote devices
