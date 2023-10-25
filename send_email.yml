@@ -2,10 +2,7 @@
 - name: Send Notificacion
   hosts: all
   become: true
-  collections:
-    - source: /home/ansible/.ansible/collections/ansible_collections/community
-      type: dir
-  
+ 
   tasks:
 
     - name: Example playbook sending mail to root
