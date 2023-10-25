@@ -10,3 +10,7 @@
       register: version
 
     - debug: msg="{{ version.stdout }}" 
+
+    - debug: msg="{{ version.sterr }}" 
+
+    
