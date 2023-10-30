@@ -1,5 +1,7 @@
 ---
-- name: Send Notificacion
+- name: Send Notificacion 
+  hosts: all
+  remote_user: admin
 
   tasks:
 
