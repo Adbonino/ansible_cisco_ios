@@ -11,11 +11,6 @@
 
     - debug: msg="{{ version.stdout }}" 
 
-    - name: Example playbook sending mail to root
-      community.general.mail:
-        subject: System localhost has been successfully provisioned.
-        delegate_to: localhost
-
     - name: Sending an e-mail using Gmail SMTP servers
       community.general.mail:
         host: smtp.gmail.com
