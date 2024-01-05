@@ -4,6 +4,9 @@
   remote_user: admin
 
   tasks:
+    - name: show facts
+      debug: msg="{{  facts }}"
+  
     - name: run show version on remote devices
       cisco.nxos.nxos_command:
         commands: show version
