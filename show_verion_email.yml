@@ -5,7 +5,7 @@
 
   tasks:
     - name: show facts
-      debug: msg="{{  facts }}"
+      debug: msg="{{  ansible_facts }}"
   
     - name: run show version on remote devices
       cisco.nxos.nxos_command:
